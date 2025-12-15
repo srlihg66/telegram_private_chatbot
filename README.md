@@ -13,7 +13,7 @@
 ---
 
 <details open>
-<summary><strong>📢 最新更新 (v4.2)：安全升级 & 功能增强</strong></summary>
+<summary><strong>📢 更新公告 (v4.2)：安全升级 & 功能增强</strong></summary>
 <br>
 
 1. **🛡️ 强制 Username 检查**
@@ -25,6 +25,7 @@
 
 👉 **Fork 用户请点击仓库上方的 `Sync fork` 按钮获取最新代码。**
 </details>
+
 ---
 
 ## 📑 目录 (Table of Contents)
