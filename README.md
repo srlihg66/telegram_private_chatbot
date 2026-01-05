@@ -12,22 +12,6 @@
 
 ---
 
-<details>
-<summary><strong>📢 更新公告 (v4.2)：安全升级 & 功能增强</strong></summary>
-<br>
-
-1. **🛡️ 强制 Username 检查**
-   - 为防止垃圾账号滥用，私聊逻辑现已增加强制检查。
-   - **未设置用户名 (`@username`) 的用户将被拦截**，并收到要求设置的提示。
-   
-2. **👤 `/info` 指令增强**
-   - 管理员查询用户信息时，现支持显示用户的 **完整姓名 (Full Name)**。
-
-👉 **Fork 用户请点击仓库上方的 `Sync fork` 按钮获取最新代码。**
-</details>
-
----
-
 ## 📑 目录 (Table of Contents)
 
 * [✨ 核心特性](#-核心特性)
@@ -143,17 +127,20 @@ v4.0 版本移除了所有不稳定的外部 API 依赖，专注于**极致的�
 
 ## ❓ 常见问题 (FAQ)
 
-**Q: 为什么点击验证按钮没有反应？**
+**Q1: 为什么点击验证按钮没有反应？**
 A: 请检查 Webhook 是否正确设置。必须确保 Telegram 允许发送 `callback_query` 事件。请务必执行上述“最后一步”中的重置操作。
 
-**Q: 为什么机器人无法在群里创建话题？**
+**Q2: 为什么机器人无法在群里创建话题？**
 A: 请确保：1. 群组 ID 正确（-100开头）；2. 群组已开启 Topics 功能；3. 机器人是群管理员且拥有 "Manage Topics" 权限。
 
-**Q: 为什么人机验证能通过收不到转发的消息？**
+**Q3: 为什么人机验证能通过收不到转发的消息？**
 A: 请仔细检查所有变量名称和id是否准确，删除webhook再重新激活。
- `(https://api.telegram.org/bot)<YOUR_TOKEN>/deleteWebhook?drop_pending_updates=true (https://api.telegram.org/bot)` 
+ `(https://api.telegram.org/bot)<YOUR_TOKEN>/deleteWebhook?drop_pending_updates=true` 
   
   如果依然无法正常转发消息，尝试完成所有步骤后，最后再添加bot的管理员权限。
+  
+**Q4: 为什么webhook设置失败？**
+A: 如果你设置了自定义域名不成功，Webhook 改回 workers.dev 域名再尝试。这种情况是你域名解析失败或者网络环境阻断造成的
  
 ---
 
