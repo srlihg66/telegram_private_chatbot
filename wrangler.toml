@@ -6,7 +6,7 @@ workers_dev = true
 [vars]
 ENV_BOT_TOKEN = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11" 
 #你的机器人 Token
-ENV_SUPERGROUP_ID = "--100123"
+ENV_SUPERGROUP_ID = "-100123"
 
 #你的群组 ID (例如 -100123...)。
 [[kv_namespaces]]
